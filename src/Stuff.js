@@ -18,9 +18,7 @@ function Stuff() {
             .then(response => response.text())
             .then(text => {
                 const loaded_quotes = text.split('\n');
-                const rand = irand(0, loaded_quotes.length);
                 setQuotes(loaded_quotes);
-                //setCurrentQuote(rand);
             })
             .catch(error => {
                 console.error('Failed to load quotes.txt: ' + error);
