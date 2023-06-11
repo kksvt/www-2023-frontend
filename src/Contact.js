@@ -5,9 +5,7 @@ class Contact extends Component {
  return (
  <div>
  <h2>Contact</h2>
- <p>E-mail: abc(at)xyz(dot)com</p>
- <p>Wybierz jedną z pozycji menu, aby dowiedzieć się czegoś
- więcej.</p>
+ <p><a href='https://www.github.com/kksvt'>Github</a></p>
  </div>
  );
  }

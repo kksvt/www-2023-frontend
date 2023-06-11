@@ -28,7 +28,7 @@ function Upload() {
   return (
     <div>
       <h2>Create a new image post</h2>
-      <input type="file" onChange={fileUpload} />
+      <p><input type="file" onChange={fileUpload} /></p>
     </div>
   );
 }
