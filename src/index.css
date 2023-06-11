@@ -1,13 +1,130 @@
 body {
+  background-color: #1a8520;
+  padding: 20px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button,
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
 }
+
+button,
+ul.header {
+  background-color: #111;
+  padding: 0;
+}
+
+button,
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+.active {  
+  background-color: #0099FF; 
+}
+
+button:hover,
+ul li:hover a {
+  background-color: lightslategray; 
+}
+
+.accordion {
+  width: 60%;
+  border: 1px solid #7a7a7a;
+  /*margin-bottom: 10px;*/
+}
+
+.accordion-text {
+  padding-left: 10px;
+  margin: 10px;
+  font-family: sans-serif;  
+}
+
+.accordion .accordion-header {
+  background-color: rgb(0, 0, 0);
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border-radius: 8px;
+}
+
+.imageboard-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.imageboard-form label {
+  margin-right: 10px;
+  width: 80px;
+}
+
+.imageboard-form input,
+.imageboard-form textarea {
+  flex: 1;
+  width: 100%;
+}
+
+.imageboard-comments {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.message {
+  margin-top: 5px;
+}
+
+.imageboard-img-section {
+  padding: 10px;
+  border-color:#111;
+  border-style:ridge;
+  max-width: min-content;
+  margin: 15px;
+  /*background-color:#474343;
+  color: white;*/
+}
+
+.imageboard-img {
+  max-width: 640px;
+  max-height: 360px;
+};
