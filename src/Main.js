@@ -40,7 +40,6 @@ function Main() {
 
     useEffect(() => {
         if (window.location.hash && window.location.hash.length > 0) {
-            //this works, even though i dont think it should
             let targetElement = document.getElementById(window.location.hash.substring(1));
             if (!targetElement) {
                 targetElement = document.getElementById(lastIndex);
@@ -64,10 +63,10 @@ function Main() {
         endMessage={<h4>No more images to display.</h4>}
       >
         {images.map((img) => (
-                <Link to={`/comments/${img.id}`} key={img.id}>
+                <Link to={`/comments/${img.id}`} key={img.id} className='link'>
                 <div className='imageboard-img-section'>
                 <div><img src={img.image} alt='uploaded' className='imageboard-img' id={img.id} onClick={updateHash} ></img></div>
-                <h3>Comments: {img.comments.length}</h3>
+                <h3 id={img.id} onClick={updateHash} >Comments: {img.comments.length}</h3>
                 </div>
                 </Link>
             ))}

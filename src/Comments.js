@@ -60,7 +60,6 @@ function Comments() {
                     return;
                 }
                 d.comments.push({author: name, content: message});
-                console.log(d.comments);
                 store.put(d);
                 setComments(d.comments);
             };
